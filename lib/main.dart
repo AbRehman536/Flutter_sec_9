@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sec_9/assets_images.dart';
 import 'package:flutter_sec_9/floating_action_button.dart';
 import 'package:flutter_sec_9/floating_action_button_extended.dart';
+import 'package:flutter_sec_9/login_form.dart';
 import 'package:flutter_sec_9/nested_row_column.dart';
 import 'package:flutter_sec_9/network_image.dart';
 import 'package:flutter_sec_9/row_column_demo.dart';
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: AssetsImagesDemo(),
+      home: LoginForm(),
     );
   }
 }
