@@ -7,6 +7,7 @@ import 'package:flutter_sec_9/login_form.dart';
 import 'package:flutter_sec_9/nested_row_column.dart';
 import 'package:flutter_sec_9/network_image.dart';
 import 'package:flutter_sec_9/row_column_demo.dart';
+import 'package:flutter_sec_9/single_selection.dart';
 
 import 'appbar_demo.dart';
 
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: ListtileDemo(),
+      home: SingleSelectionDemo(),
     );
   }
 }
