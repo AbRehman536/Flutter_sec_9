@@ -4,6 +4,9 @@ import 'package:flutter_sec_9/bottom_sheet.dart';
 import 'package:flutter_sec_9/dialogbox.dart';
 import 'package:flutter_sec_9/floating_action_button.dart';
 import 'package:flutter_sec_9/floating_action_button_extended.dart';
+import 'package:flutter_sec_9/gridView_builder.dart';
+import 'package:flutter_sec_9/gridview_basic.dart';
+import 'package:flutter_sec_9/gridview_staggered.dart';
 import 'package:flutter_sec_9/listTile_demo.dart';
 import 'package:flutter_sec_9/login_form.dart';
 import 'package:flutter_sec_9/multiple_selection.dart';
@@ -45,7 +48,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: PageViewDemo(),
+      home: GridviewStaggered(),
     );
   }
 }
