@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sec_9/assets_images.dart';
 import 'package:flutter_sec_9/bottom_bar_demo.dart';
 import 'package:flutter_sec_9/bottom_sheet.dart';
+import 'package:flutter_sec_9/cupertino_switch.dart';
 import 'package:flutter_sec_9/curved_bottom_bar_demo.dart';
 import 'package:flutter_sec_9/date_time_picker.dart';
 import 'package:flutter_sec_9/dialogbox.dart';
@@ -18,6 +19,7 @@ import 'package:flutter_sec_9/network_image.dart';
 import 'package:flutter_sec_9/page_view.dart';
 import 'package:flutter_sec_9/row_column_demo.dart';
 import 'package:flutter_sec_9/single_selection.dart';
+import 'package:flutter_sec_9/slider.dart';
 import 'package:flutter_sec_9/tab_bar.dart';
 
 import 'appbar_demo.dart';
@@ -52,7 +54,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: DateTimePicker(),
+      home: CupertinoSwitchDemo(),
     );
   }
 }
