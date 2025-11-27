@@ -19,15 +19,22 @@ import 'package:flutter_sec_9/nested_row_column.dart';
 import 'package:flutter_sec_9/network_image.dart';
 import 'package:flutter_sec_9/otp_field.dart';
 import 'package:flutter_sec_9/page_view.dart';
+import 'package:flutter_sec_9/passing_parameters/screen_a.dart';
+import 'package:flutter_sec_9/providers/screen_1.dart';
+import 'package:flutter_sec_9/providers/users.dart';
 import 'package:flutter_sec_9/row_column_demo.dart';
 import 'package:flutter_sec_9/single_selection.dart';
 import 'package:flutter_sec_9/slider.dart';
 import 'package:flutter_sec_9/tab_bar.dart';
+import 'package:provider/provider.dart';
 
 import 'appbar_demo.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(create: (context)=> UserProvider()),
+  ],
+  child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -56,7 +63,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: DropdownDemo(),
+      home: Screen1(),
     );
   }
 }
