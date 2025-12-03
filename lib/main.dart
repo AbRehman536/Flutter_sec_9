@@ -6,6 +6,7 @@ import 'package:flutter_sec_9/cupertino_switch.dart';
 import 'package:flutter_sec_9/curved_bottom_bar_demo.dart';
 import 'package:flutter_sec_9/date_time_picker.dart';
 import 'package:flutter_sec_9/dialogbox.dart';
+import 'package:flutter_sec_9/drawer.dart';
 import 'package:flutter_sec_9/dropdown.dart';
 import 'package:flutter_sec_9/floating_action_button.dart';
 import 'package:flutter_sec_9/floating_action_button_extended.dart';
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -63,7 +65,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Screen1(),
+      home: DrawerMenu(),
     );
   }
 }
