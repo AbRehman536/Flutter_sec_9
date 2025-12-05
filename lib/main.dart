@@ -30,6 +30,7 @@ import 'package:flutter_sec_9/tab_bar.dart';
 import 'package:provider/provider.dart';
 
 import 'appbar_demo.dart';
+import 'onBoarding.dart';
 
 void main() {
   runApp(MultiProvider(providers: [
@@ -65,7 +66,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: DrawerMenu(),
+      home: Onboarding(),
     );
   }
 }
